@@ -1,0 +1,9 @@
+project: reedsolomon
+
+target: fuzz_reedsolomon
+
+image: ghcr.io/ethanm27/reedsolomon:latest
+
+cmds:
+    - cmd: /src/mayhem/fuzz_reedsolomon.py
+      libfuzzer: true
